@@ -15,6 +15,7 @@
 
 #import  "BNCLog.h"
 
+__attribute((weak)) NS_FORMAT_FUNCTION(1, 0) void CLSNSLogv(NSString *format, va_list args) {}
 
 #define _countof(array)  (sizeof(array)/sizeof(array[0]))
 static NSNumber *bnc_LogIsInitialized = nil;
@@ -543,6 +544,10 @@ void BNCLogWriteMessageFormat(
     NSString* m = [[NSString alloc] initWithFormat:message arguments:args];
     NSString* s = [NSString stringWithFormat:
         @"[branch.io] %@(%d) %@: %@", filename, lineNumber, levelString, m];
+    va_end(args);
+
+    va_start(args, message);
+    CLSNSLogv(message, args);
     va_end(args);
 
     if (logLevel >= bnc_LogDisplayLevel) {
