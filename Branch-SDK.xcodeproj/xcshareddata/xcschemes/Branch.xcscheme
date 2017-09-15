@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B3B977F1E8C1B650089C04B"
-               BuildableName = "WebViewExample.app"
-               BlueprintName = "WebViewExample"
-               ReferencedContainer = "container:WebViewExample.xcodeproj">
+               BlueprintIdentifier = "E298D0511C73D1B800589D22"
+               BuildableName = "Branch.framework"
+               BlueprintName = "Branch"
+               ReferencedContainer = "container:Branch-SDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,20 +26,38 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      enableThreadSanitizer = "YES"
+      enableUBSanitizer = "YES"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4D4C59371F6B4E6C005E349C"
+               BuildableName = "Branch-SDK-Tests.xctest"
+               BlueprintName = "Branch-SDK-Tests"
+               ReferencedContainer = "container:Branch-SDK.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B3B977F1E8C1B650089C04B"
-            BuildableName = "WebViewExample.app"
-            BlueprintName = "WebViewExample"
-            ReferencedContainer = "container:WebViewExample.xcodeproj">
+            BlueprintIdentifier = "E298D0511C73D1B800589D22"
+            BuildableName = "Branch.framework"
+            BlueprintName = "Branch"
+            ReferencedContainer = "container:Branch-SDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
+         <AdditionalOption
+            key = "NSZombieEnabled"
+            value = "YES"
+            isEnabled = "YES">
+         </AdditionalOption>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
@@ -53,16 +71,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B3B977F1E8C1B650089C04B"
-            BuildableName = "WebViewExample.app"
-            BlueprintName = "WebViewExample"
-            ReferencedContainer = "container:WebViewExample.xcodeproj">
+            BlueprintIdentifier = "E298D0511C73D1B800589D22"
+            BuildableName = "Branch.framework"
+            BlueprintName = "Branch"
+            ReferencedContainer = "container:Branch-SDK.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -72,16 +89,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B3B977F1E8C1B650089C04B"
-            BuildableName = "WebViewExample.app"
-            BlueprintName = "WebViewExample"
-            ReferencedContainer = "container:WebViewExample.xcodeproj">
+            BlueprintIdentifier = "E298D0511C73D1B800589D22"
+            BuildableName = "Branch.framework"
+            BlueprintName = "Branch"
+            ReferencedContainer = "container:Branch-SDK.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

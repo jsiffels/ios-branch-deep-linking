@@ -1,20 +1,10 @@
 use_frameworks!
 platform :ios, '9.0'
 
-# ----- Branch pod
-#
-# Take the Branch pod from this repo rather than CocoaPods.
-# Don't use the path: argument if you want the production
-# release from CocoaPods., e.g.:
-#
-# pod "Branch"
-
 # ----- Application target
 
 target "WebViewExample" do
     project 'WebViewExample'
-    pod 'Branch', path: "../.."
-    # ----- Other app dependencies
     pod "Cartography"
     pod "MBProgressHUD"
     pod "TextAttributes"

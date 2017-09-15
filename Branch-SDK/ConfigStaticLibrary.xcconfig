@@ -1,0 +1,12 @@
+//
+//  ConfigStaticLibrary.xcconfig
+//  Branch
+//
+//  Created by Edward Smith on 9/15/17.
+//  Copyright © 2017 Branch, Inc. All rights reserved.
+//
+
+MACH_O_TYPE = staticlib
+PRODUCT_NAME = Branch
+PRODUCT_MODULE_NAME = Branch
+IPHONEOS_DEPLOYMENT_TARGET = 7.0
